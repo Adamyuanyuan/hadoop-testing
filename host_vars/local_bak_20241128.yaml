@@ -1,9 +1,7 @@
-project_version: 1_ctyun_20241128
+project_version: 1-SNAPSHOT
 
 # base
-
 zulu8_version: 8.82.0.21
-# 1.8.0_352_ccdp3.4.4_1.0.0
 jdk8_version: 8.0.432
 
 zulu11_version: 11.76.21
@@ -12,25 +10,24 @@ jdk11_version: 11.0.25
 zulu17_version: 17.54.21
 jdk17_version: 17.0.13
 
-jdk21_enabled: true
+jdk21_enabled: false
 zulu21_version: 21.38.21
 jdk21_version: 21.0.5
 
-s3_enabled: true
+s3_enabled: false
 aws_java_sdk_version: 1.12.620
 
 # components
-kerberos_enabled: true
-# 3.3.3_ccdp3.4.4_1.0.5
+kerberos_enabled: false
+
 hadoop_version: 3.3.6
 
-# old: 2.3.9
-hive_version: 3.1.2
+hive_version: 2.3.9
 
 zeppelin_enabled: true
 zeppelin_version: 0.11.0
 zeppelin_custom_name: all
-# 3.7.1_ccdp3.4.4_1.0.0
+
 zookeeper_version: 3.8.4
 
 scala_binary_version: 2.12
@@ -38,50 +35,39 @@ scala_binary_version: 2.12
 spark_enabled: true
 spark_binary_version: 3.5
 spark_hadoop_version: 3.3.4
-# 3.3.3_ccdp3.4.4_1.0.4
 spark_version: 3.5.3
 
-flink_enabled: true
-# 1.16.2_ccdp3.4.4_1.0.2
-flink_binary_version: '1.20'
+flink_enabled: false
+flink_binary_version: 1.20
 flink_version: 1.20.0
 flink_hive_version: 2.3.10
 
 kyuubi_enabled: true
-# 1.6.0_ccdp3.4.4_1.0.3
 kyuubi_version: 1.10.0
 kyuubi_hadoop_version: 3.3.6
 
-# 2.2.0_ccdp3.4.4_1.0.4 ranger 先不开
 ranger_enabled: false
 ranger_version: 2.4.0
 
-# 406_ccdp3.4.4_1.0.2
-trino_enabled: true
+trino_enabled: false
 trino_version: 436
 
 iceberg_enabled: true
-# 1.4.3（集成在Flink、Spark、Hive组件中）
 iceberg_version: 1.7.0
 
 hudi_enabled: false
-# 0.12.2（集成到Spark、Hive、Flink、Trino）先不开
 hudi_version: 0.14.1
 
-kafka_enabled: true
-# 2.8.1_ccdp3.4.4_1.0.2
+kafka_enabled: false
 kafka_version: 2.8.1
 
-grafana_enabled: true
-# 9.5.18_ccdp3.4.4_1.0.0
+grafana_enabled: false
 grafana_version: 11.1.3
 
 prometheus_enabled: false
-# 2.44.0_ccdp3.4.4_1.0.2 先不开
 prometheus_version: 2.53.1
 
 loki_enabled: false
-# 暂无，先不开
 loki_version: 3.1.0
 loki_log4j2_appender_version: 0.9.32
 
